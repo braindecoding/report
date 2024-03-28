@@ -4,7 +4,7 @@ import numpy as np
 # Current data from the image
 methods = ['Miyawaki', 'BCCA', 'DCCAE-A', 'DCCAE-S', 'De-CNN', 'DGMM', 'ifir']
 binary_patterns_mse = [0.3, 0.25, 0.23, 0.27, 0.1, 0.08, 0.0276]
-handwritten_digits_mse = [0.22, 0.18, 0.15, 0.12, 0.05, 0.03, 0.0276]
+handwritten_digits_mse = [0.22, 0.18, 0.15, 0.12, 0.05, 0.03, 0.0503]
 
 # Error bars are just example values, if you have the specific values, they should be replaced
 binary_patterns_error = [0.05] * len(methods)
@@ -42,7 +42,7 @@ ax.set_xticklabels(methods)
 
 # Save the figure
 plt.tight_layout()
-output_file = '/mnt/data/updated_mse_chart.png'
+output_file = 'updated_mse_chart.png'
 plt.savefig(output_file)
 
 output_file
